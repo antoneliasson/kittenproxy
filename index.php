@@ -25,6 +25,7 @@ function serve_cat($cat) {
     echo $cat;
 }
 
+$cat = '';
 if (fresh_cat()) {
     $cat = read_cat();
 } else {
