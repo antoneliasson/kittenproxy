@@ -4,6 +4,9 @@ define("freshness_seconds", 5*60);
 
 function fresh_cat() {
     $stat = stat(cache_filename);
+    if (FALSE === $stat) {
+        return false;
+    }
     return time() - $stat['mtime'] < freshness_seconds;
 }
 
