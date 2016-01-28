@@ -17,6 +17,7 @@ function read_cat() {
 function get_new_cat() {
     $cat = file_get_contents('http://thecatapi.com/api/images/get?format=src&type=png&size=med');
     file_put_contents(cache_filename, $cat);
+    return $cat;
 }
 
 function serve_cat($cat) {
