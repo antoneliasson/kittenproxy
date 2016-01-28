@@ -16,7 +16,7 @@ This program requires `allow_url_fopen` to be enabled in php.ini, so it probably
 
 ### Demo
 
-[http://kittenproxy.antoneliasson.se/kitten.png][http://kittenproxy.antoneliasson.se/kitten.png].
+[http://kittenproxy.antoneliasson.se/kitten.png](http://kittenproxy.antoneliasson.se/kitten.png) (updates every five minutes).
 
 ### TODO
 
