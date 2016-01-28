@@ -14,7 +14,7 @@ Copy *index.php* and *.htaccess* to the site root. A mod_rewrite rule in .htacce
 
 ### Demo
 
-[http://kittenproxy.antoneliasson.se/kitten.png][http://kittenproxy.antoneliasson.se/kitten.png].
+[http://kittenproxy.antoneliasson.se/kitten.png](http://kittenproxy.antoneliasson.se/kitten.png).
 
 ### TODO
 
