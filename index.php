@@ -3,11 +3,13 @@ define("cache_filename", "/tmp/kittenproxy.png");
 define("freshness_seconds", 5*60);
 
 function fresh_cat() {
-    $stat = stat(cache_filename);
-    if (FALSE === $stat) {
-        return false;
+    if (file_exists(cache_filename)) {
+        $stat = stat(cache_filename);
+        if ($stat) {
+            return time() - $stat['mtime'] < freshness_seconds;
+        }
     }
-    return time() - $stat['mtime'] < freshness_seconds;
+    return false;
 }
 
 function read_cat() {
