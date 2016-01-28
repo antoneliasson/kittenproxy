@@ -1,11 +1,15 @@
 <?php
+/*.
+require_module 'standard';
+.*/
+
 define("cache_filename", "/tmp/kittenproxy.png");
 define("freshness_seconds", 5*60);
 
 function fresh_cat() {
     if (file_exists(cache_filename)) {
         $stat = stat(cache_filename);
-        if ($stat) {
+        if (FALSE !== $stat) {
             return time() - $stat['mtime'] < freshness_seconds;
         }
     }
@@ -22,6 +26,9 @@ function get_new_cat() {
     return $cat;
 }
 
+/**
+ * @param string $cat
+ */
 function serve_cat($cat) {
     header('Content-Type: image/png');
     header('Content-Length: ' . strlen($cat));
