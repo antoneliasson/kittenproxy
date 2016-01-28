@@ -12,6 +12,8 @@ Create a new virtual host in Apache 2.4. Make sure its `Directory` section has `
 
 Copy *index.php* and *.htaccess* to the site root. A mod_rewrite rule in .htaccess presents the PHP script as a file ending in .png (/kitten.png in the example).
 
+This program requires `allow_url_fopen` to be enabled in php.ini, so it probably cannot be used in a shared hosting environment where the operator expects people to write shit code. In such a case the program could be changed to use cURL instead.
+
 ### Demo
 
 [http://kittenproxy.antoneliasson.se/kitten.png][http://kittenproxy.antoneliasson.se/kitten.png].
