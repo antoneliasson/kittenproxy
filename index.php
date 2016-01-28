@@ -4,7 +4,7 @@ require_module 'standard';
 .*/
 
 define("cache_filename", "/tmp/kittenproxy.png");
-define("freshness_seconds", 5*60);
+define("freshness_seconds", 10*60);
 
 function fresh_cat() {
     if (file_exists(cache_filename)) {
