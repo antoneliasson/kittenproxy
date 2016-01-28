@@ -1,4 +1,4 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteRule /kitten.png /index.php
+RewriteRule ^kitten.png$ /index.php
 </IfModule>
