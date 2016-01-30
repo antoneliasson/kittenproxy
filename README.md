@@ -1,4 +1,4 @@
-## A proxy for all the kitten banners you need.
+# A proxy for all the kitten banners you need.
 
 Killing Floor 2 Dedicated Server allows the administrator to specify a URL to a PNG image to use as the banner on the welcome screen. Naturally, a zombie shooter game should have a cute cat image as its banner, kindly provided by [The Cat API](http://thecatapi.com/).
 
@@ -6,7 +6,7 @@ However, The Cat API responds with a HTTP redirect to the actual image file, and
 
 Moreover, it would be *more funneh* if every player logging into the server for the same game (roughly simultaneously) received the same cat image, so that its cuteness can be discussed in the lobby before entering the battleground to shoot zombies. For this reason, *kittenproxy* caches the cat image for ten minutes before replacing it with a new one.
 
-### Installation
+## Installation
 
 Create a new virtual host in Apache 2.4. Make sure its `Directory` section has `AllowOverride All` enabled.
 
@@ -14,10 +14,10 @@ Copy *index.php* and *.htaccess* to the site root. A mod_rewrite rule in .htacce
 
 This program requires `allow_url_fopen` to be enabled in php.ini, so it probably cannot be used in a shared hosting environment where the operator expects people to write shit code. In such a case the program could be changed to use cURL instead.
 
-### Demo
+## Demo
 
 [http://kittenproxy.antoneliasson.se/kitten.png](http://kittenproxy.antoneliasson.se/kitten.png) (updates every ten minutes).
 
-### TODO
+## TODO
 
 This is probably somewhat copyright infringing, since the URL to the original file is not shown anywhere. Easiest would probably be to add it as an extra HTTP header, where it is readily accessible to anyone who is looking.
