@@ -14,6 +14,10 @@ Copy *index.php* and *.htaccess* to the site root. A mod_rewrite rule in .htacce
 
 This program requires `allow_url_fopen` to be enabled in php.ini, so it probably cannot be used in a shared hosting environment where the operator expects people to write shit code. In such a case the program could be changed to use cURL instead.
 
+## Screenshot
+
+See https://www.antoneliasson.se/journal/kittenproxy/
+
 ## Demo
 
 [http://kittenproxy.antoneliasson.se/kitten.png](http://kittenproxy.antoneliasson.se/kitten.png) (updates every ten minutes).
