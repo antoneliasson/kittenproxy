@@ -1,3 +1,7 @@
+> **This project has been obsoleted by the new and improved [Reactive Kitten Proxy](https://github.com/antoneliasson/reactive-kitten-proxy).**
+
+---
+
 # A proxy for all the kitten banners you need.
 
 Killing Floor 2 Dedicated Server allows the administrator to specify a URL to a PNG image to use as the banner on the welcome screen. Naturally, a zombie shooter game should have a cute cat image as its banner, kindly provided by [The Cat API](http://thecatapi.com/).
