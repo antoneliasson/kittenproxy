@@ -1,4 +1,4 @@
-> **This project has been obsoleted by the new and improved [Reactive Kitten Proxy](https://github.com/antoneliasson/reactive-kitten-proxy).**
+> **This project has been obsoleted by the new and improved [Reactive Kitten Proxy](https://github.com/antoneliasson/reactive-kitten-proxy). The project's original description is left below.**
 
 ---
 
